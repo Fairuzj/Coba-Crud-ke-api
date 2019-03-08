@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Padi : "
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/editId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Id"
+        android:layout_toRightOf="@+id/tvId"
+        android:layout_alignBaseline="@+id/tvId"/>
+    <TextView
+        android:id="@+id/luas_lahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luas Lahan : "
+        android:textSize="20sp"
+        android:layout_below="@+id/tvId"/>
+    <TextView
+        android:id="@+id/tgl_tanam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tanggal tanam : "
+        android:layout_below="@id/luas_lahan"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tgl_siap_panen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tanggal panen : "
+        android:layout_below="@id/tgl_tanam"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/hasil_panen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil panen : "
+        android:layout_below="@id/tgl_siap_panen"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/pemilik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pemilik : "
+        android:layout_below="@id/hasil_panen"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/nik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIK : "
+        android:layout_below="@id/pemilik"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/pekerja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pekerja : "
+        android:layout_below="@id/nik"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/editluas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:layout_toRightOf="@+id/luas_lahan"
+        android:layout_alignBaseline="@+id/luas_lahan"/>
+    <EditText
+        android:id="@+id/edittgl_tanam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nomor"
+        android:layout_toRightOf="@+id/tgl_tanam"
+        android:layout_alignBaseline="@+id/tgl_tanam"/>
+    <EditText
+        android:id="@+id/edittgl_siap_panen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nomor"
+        android:layout_toRightOf="@+id/tgl_siap_panen"
+        android:layout_alignBaseline="@+id/tgl_siap_panen"/>
+    <EditText
+        android:id="@+id/edithasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nomor"
+        android:layout_toRightOf="@+id/hasil_panen"
+        android:layout_alignBaseline="@+id/hasil_panen"/>
+    <EditText
+        android:id="@+id/editpemilik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nomor"
+        android:layout_toRightOf="@+id/pemilik"
+        android:layout_alignBaseline="@+id/pemilik"/>
+    <EditText
+        android:id="@+id/editnik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nomor"
+        android:layout_toRightOf="@+id/nik"
+        android:layout_alignBaseline="@+id/nik"/>
+    <EditText
+        android:id="@+id/editpekerja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nomor"
+        android:layout_toRightOf="@+id/pekerja"
+        android:layout_alignBaseline="@+id/pekerja"/>
+
+    <LinearLayout
+        android:id="@+id/Linearlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/pekerja"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btUpdate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"/>
+
+        <Button
+            android:id="@+id/btDelete2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"/>
+        <Button
+            android:id="@+id/btBackGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
+    </LinearLayout>
+</RelativeLayout>

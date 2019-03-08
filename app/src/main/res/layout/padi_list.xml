@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:hint="Id"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvLuas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvId"
+            android:hint="Luas"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvTglTanam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvLuas"
+            android:hint="Tgl tanam"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvTglPanen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTglTanam"
+            android:layout_alignParentRight="true"
+            android:hint="Tgl panen"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvHasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTglPanen"
+            android:hint="Hasip panen"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvPemilik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvHasil"
+            android:hint="Pemilik"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvNik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPemilik"
+            android:layout_alignParentRight="true"
+            android:hint="Nik"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPekerja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNik"
+            android:hint="Pekerja"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+</LinearLayout>
