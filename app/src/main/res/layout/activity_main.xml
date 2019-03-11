@@ -11,11 +11,11 @@
         android:layout_height="wrap_content"
         android:text="Insert"
         android:layout_margin="10dp"/>
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
+    <ListView
+        android:id="@+id/list"
         android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/btIns">
-    </android.support.v7.widget.RecyclerView>
+    </ListView>
 </RelativeLayout>

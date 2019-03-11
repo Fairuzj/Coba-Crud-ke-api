@@ -761,6 +761,7 @@ id item_touch_helper_previous_elevation
 id left
 id line1
 id line3
+id list
 id listMode
 id list_item
 id luas_lahan
@@ -783,7 +784,6 @@ id percent
 id progress_circular
 id progress_horizontal
 id radio
-id recyclerView
 id right
 id right_icon
 id right_side

@@ -1,5 +1,6 @@
 package com.example.ok.coba_crud;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -51,8 +52,8 @@ public class InsertActivity extends AppCompatActivity {
                 postPadiCall.enqueue(new Callback<CRUDPadi>() {
                     @Override
                     public void onResponse(Call<CRUDPadi> call, Response<CRUDPadi> response) {
-                        MainActivity.ma.refresh();
-                        finish();
+                        Intent intent = new Intent(InsertActivity.this,MainActivity.class);
+                        startActivity(intent);
                     }
 
                     @Override
@@ -67,8 +68,8 @@ public class InsertActivity extends AppCompatActivity {
         btBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MainActivity.ma.refresh();
-                finish();
+                Intent intent = new Intent(InsertActivity.this,MainActivity.class);
+                startActivity(intent);
             }
         });
     }

@@ -59,8 +59,8 @@ public class EditActivity extends AppCompatActivity {
                 updatePadiCall.enqueue(new Callback<CRUDPadi>() {
                     @Override
                     public void onResponse(Call<CRUDPadi> call, Response<CRUDPadi> response) {
-                        MainActivity.ma.refresh();
-                        finish();
+                        Intent intent = new Intent(EditActivity.this,MainActivity.class);
+                        startActivity(intent);
                     }
 
                     @Override
@@ -79,8 +79,8 @@ public class EditActivity extends AppCompatActivity {
                     deletePadi.enqueue(new Callback<CRUDPadi>() {
                         @Override
                         public void onResponse(Call<CRUDPadi> call, Response<CRUDPadi> response) {
-                            MainActivity.ma.refresh();
-                            finish();
+                            Intent intent = new Intent(EditActivity.this,MainActivity.class);
+                            startActivity(intent);
                         }
 
                         @Override
@@ -97,8 +97,8 @@ public class EditActivity extends AppCompatActivity {
         btBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MainActivity.ma.refresh();
-                finish();
+                Intent intent = new Intent(EditActivity.this,MainActivity.class);
+                startActivity(intent);
             }
         });
     }
